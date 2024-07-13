@@ -91,6 +91,7 @@ public class TutorialController {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
+	
 
 	@DeleteMapping("/tutorials/{id}")
 	public ResponseEntity<HttpStatus> deleteTutorial(@PathVariable("id") long id) {
