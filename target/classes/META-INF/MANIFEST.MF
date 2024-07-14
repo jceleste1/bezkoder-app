@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 22
+Class-Path: lib/spring-boot-starter-data-jpa-2.2.1.RELEASE.jar lib/sprin
+ g-boot-starter-aop-2.2.1.RELEASE.jar lib/spring-aop-5.2.1.RELEASE.jar l
+ ib/aspectjweaver-1.9.4.jar lib/spring-boot-starter-jdbc-2.2.1.RELEASE.j
+ ar lib/HikariCP-3.4.1.jar lib/spring-jdbc-5.2.1.RELEASE.jar lib/jakarta
+ .activation-api-1.2.1.jar lib/jakarta.persistence-api-2.2.3.jar lib/jak
+ arta.transaction-api-1.3.3.jar lib/hibernate-core-5.4.8.Final.jar lib/j
+ boss-logging-3.4.1.Final.jar lib/javassist-3.24.0-GA.jar lib/byte-buddy
+ -1.10.2.jar lib/antlr-2.7.7.jar lib/jandex-2.0.5.Final.jar lib/classmat
+ e-1.5.1.jar lib/dom4j-2.1.1.jar lib/hibernate-commons-annotations-5.1.0
+ .Final.jar lib/jaxb-runtime-2.3.2.jar lib/txw2-2.3.2.jar lib/istack-com
+ mons-runtime-3.0.8.jar lib/stax-ex-1.8.1.jar lib/FastInfoset-1.2.16.jar
+  lib/spring-data-jpa-2.2.1.RELEASE.jar lib/spring-data-commons-2.2.1.RE
+ LEASE.jar lib/spring-orm-5.2.1.RELEASE.jar lib/spring-context-5.2.1.REL
+ EASE.jar lib/spring-tx-5.2.1.RELEASE.jar lib/spring-beans-5.2.1.RELEASE
+ .jar lib/slf4j-api-1.7.29.jar lib/spring-aspects-5.2.1.RELEASE.jar lib/
+ spring-boot-starter-web-2.2.1.RELEASE.jar lib/spring-boot-starter-2.2.1
+ .RELEASE.jar lib/spring-boot-2.2.1.RELEASE.jar lib/spring-boot-autoconf
+ igure-2.2.1.RELEASE.jar lib/spring-boot-starter-logging-2.2.1.RELEASE.j
+ ar lib/logback-classic-1.2.3.jar lib/logback-core-1.2.3.jar lib/log4j-t
+ o-slf4j-2.12.1.jar lib/log4j-api-2.12.1.jar lib/jul-to-slf4j-1.7.29.jar
+  lib/jakarta.annotation-api-1.3.5.jar lib/snakeyaml-1.25.jar lib/spring
+ -boot-starter-json-2.2.1.RELEASE.jar lib/jackson-databind-2.10.0.jar li
+ b/jackson-annotations-2.10.0.jar lib/jackson-core-2.10.0.jar lib/jackso
+ n-datatype-jdk8-2.10.0.jar lib/jackson-datatype-jsr310-2.10.0.jar lib/j
+ ackson-module-parameter-names-2.10.0.jar lib/spring-boot-starter-tomcat
+ -2.2.1.RELEASE.jar lib/tomcat-embed-core-9.0.27.jar lib/tomcat-embed-el
+ -9.0.27.jar lib/tomcat-embed-websocket-9.0.27.jar lib/spring-boot-start
+ er-validation-2.2.1.RELEASE.jar lib/jakarta.validation-api-2.0.1.jar li
+ b/hibernate-validator-6.0.18.Final.jar lib/spring-web-5.2.1.RELEASE.jar
+  lib/spring-webmvc-5.2.1.RELEASE.jar lib/spring-expression-5.2.1.RELEAS
+ E.jar lib/mysql-connector-java-8.0.18.jar lib/spring-boot-starter-data-
+ jdbc-2.2.1.RELEASE.jar lib/spring-data-jdbc-1.1.1.RELEASE.jar lib/sprin
+ g-data-relational-1.1.1.RELEASE.jar lib/jakarta.xml.bind-api-2.3.2.jar 
+ lib/spring-core-5.2.1.RELEASE.jar lib/spring-jcl-5.2.1.RELEASE.jar
+Implementation-Title: spring-boot-data-jpa
+Implementation-Version: 0.0.1-SNAPSHOT
+Main-Class: com.bezkoder.spring.datajpa.SpringBootDataJpaApplication
+Created-By: Maven Integration for Eclipse
+

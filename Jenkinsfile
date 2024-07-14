@@ -50,7 +50,7 @@ pipeline {
 						echo ">>> Erro  docker rm."
 					}          
 				               
-                    sh 'docker-compose up -d'
+                    sh 'docker run -d -p 80:8080  jceleste/bezkoder-app:latest'
 				}
 				
 			}
