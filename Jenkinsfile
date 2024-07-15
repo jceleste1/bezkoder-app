@@ -11,23 +11,6 @@ pipeline {
 
     stages {
 		
-		stage('Stop docker container'){
-            steps{
-                script {
-                   sh 'docker stop $(docker ps -a -q)'
-                
-                }
-            }
-        }
-        
-           stage('Clean docker containers'){
-            steps{
-                script {
-                   sh 'docker rm $(docker ps -a -q)'
-                }
-            }
-        }
-		
 		
          stage ('Build Docker Image.....'){
              steps{
