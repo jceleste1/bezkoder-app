@@ -32,10 +32,9 @@ pipeline {
         
         stage('Clean docker containers'){
             steps{
-                script{
-                
-                   sh "docker kill $(docker ps -qf expose=80)"
-                    
+                script {
+                   sh 'docker stop $(docker ps -a -q)'
+                   sh 'docker rm $(docker ps -a -q)'
                 }
             }
         }
