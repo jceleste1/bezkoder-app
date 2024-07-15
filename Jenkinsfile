@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com/','dockerhub'){
-					  dockerapp.push("latest")
+					  dockerapp.push("${env.BUILD_ID}")
                     }
                 }
             }
@@ -43,13 +43,13 @@ pipeline {
 					}
 					try {
 						sh 'docker rm bezkoder-app_1'
-						sh 'docker rmi -f jceleste/bezkoder-app:latest'
+						sh 'docker rmi -f jceleste/bezkoder-app:${env.BUILD_ID}'
 					} catch (err) {
 						echo err.getMessage()
 						echo ">>> Erro  docker rm."
 					}          
 				               
-                    sh 'docker run -d -p 80:8080  jceleste/bezkoder-app:latest'
+                    sh 'docker run -d -p 80:8080  jceleste/bezkoder-app:${env.BUILD_ID}'
 				}
 				
 			}
