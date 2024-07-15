@@ -29,19 +29,26 @@ pipeline {
                 }
             }
         }
+        
+        stage('Clean docker containers'){
+            steps{
+                script{
+                
+                    def doc_containers = sh(returnStdout: true, script: 'docker container ps -aq').replaceAll("\n", " ") 
+                    if (doc_containers) {
+                        sh "docker stop ${doc_containers}"
+                    }
+                    
+                }
+            }
+        }
 		
 		
 		stage ('Deploy Docker Image'){
             steps{
 		     	script {
-				
-					try {
-						  sh "docker run -d -p 80:8080  jceleste/bezkoder-app:${env.BUILD_ID}"
-					} catch (err) {
-						echo err.getMessage()
-						echo ">>>> Error docker stop."
-					}
-				
+				               
+                    sh "docker run -d -p 80:8080  jceleste/bezkoder-app:${env.BUILD_ID}"
 				}
 				
 			}
