@@ -34,10 +34,7 @@ pipeline {
             steps{
                 script{
                 
-                    def doc_containers = sh(returnStdout: true, script: 'docker container ps -aq').replaceAll("\n", " ") 
-                    if (doc_containers) {
-                        sh "docker stop ${doc_containers}"
-                    }
+                   sh "docker kill $(docker ps -qf expose=80)"
                     
                 }
             }
