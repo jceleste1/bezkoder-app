@@ -36,20 +36,12 @@ pipeline {
 		     	script {
 				
 					try {
-						sh 'docker stop bezkoder-app_1'
+						  sh 'docker run -d -p 80:8080  jceleste/bezkoder-app:${env.BUILD_ID}'
 					} catch (err) {
 						echo err.getMessage()
 						echo ">>>> Error docker stop."
 					}
-					try {
-						sh 'docker rm bezkoder-app_1'
-						sh 'docker rmi -f jceleste/bezkoder-app:${env.BUILD_ID}'
-					} catch (err) {
-						echo err.getMessage()
-						echo ">>> Erro  docker rm."
-					}          
-				               
-                    sh 'docker run -d -p 80:8080  jceleste/bezkoder-app:${env.BUILD_ID}'
+				
 				}
 				
 			}
