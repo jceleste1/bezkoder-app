@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-@EnableSwagger2
 public class SpringBootDataJpaApplication {
 
 	public static void main(String[] args) {
