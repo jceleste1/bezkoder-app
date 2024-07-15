@@ -33,7 +33,15 @@ pipeline {
         }
         
      
-        
+        stage ('Kill instance resource jornaul'){
+            steps{
+		     	script { 
+                    sh " docker rm -f jornaul"
+				}
+				
+			}
+           
+        }
        
 		
 		
@@ -41,7 +49,7 @@ pipeline {
             steps{
 		     	script {
 				               
-                    sh "docker run -d -p 80:8080  jceleste/bezkoder-app:${env.BUILD_ID}"
+                    sh "docker run  --name   jornaul  -d -p 80:8080  jceleste/bezkoder-app:${env.BUILD_ID}"
 				}
 				
 			}
