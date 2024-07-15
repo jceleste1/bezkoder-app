@@ -30,7 +30,22 @@ pipeline {
             }
         }
         
-      
+        stage('Stop docker containers'){
+            steps{
+                script {
+                   sh 'docker stop $(docker ps -a -q)'
+                
+                }
+            }
+        }
+        
+          stage('Clean docker containers'){
+            steps{
+                script {
+                   sh 'docker rm $(docker ps -a -q)'
+                }
+            }
+        }
 		
 		
 		stage ('Deploy Docker Image'){
