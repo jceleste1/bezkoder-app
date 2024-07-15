@@ -54,3 +54,13 @@ mvn spring-boot:run
 docker build -t bezkoder-app  . -f Dockerfile
 ```
 
+## SQLs
+
+CREATE TABLE tutorials (
+    id INT AUTO_INCREMENT,
+    title VARCHAR(50) NOT NULL,
+    description  VARCHAR(250) NOT NULL,
+    published boolean DEFAULT false ,
+    PRIMARY KEY(id)
+) ;
+
