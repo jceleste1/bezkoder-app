@@ -33,7 +33,7 @@ public class TutorialController {
 	public ResponseEntity<List<Tutorial>> getAllTutorials(@RequestParam(required = false) String title) {
 		try {
 			List<Tutorial> tutorials = new ArrayList<Tutorial>();
-			System.out.println("Processando  --- 12  tutorials  title <<<<<>>>>>");
+			System.out.println("Processando  --- 1  tutorials  title <<<<<>>>>>");
 
 			if (title == null)
 				tutorialRepository.findAll().forEach(tutorials::add);
