@@ -36,7 +36,7 @@ pipeline {
 		     	script {
 				
 					try {
-						  sh 'docker run -d -p 80:8080  jceleste/bezkoder-app:${env.BUILD_ID}'
+						  sh 'docker run -d -p 80:8080  jceleste/bezkoder-app:'${env.BUILD_ID}
 					} catch (err) {
 						echo err.getMessage()
 						echo ">>>> Error docker stop."
